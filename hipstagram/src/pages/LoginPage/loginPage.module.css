@@ -1,0 +1,33 @@
+.main {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.img {
+    height: 100vh;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.logo {
+    height: 90px;
+}
+
+h1 {
+    font-size: 4.2em;
+    line-height: 1.1;
+}
