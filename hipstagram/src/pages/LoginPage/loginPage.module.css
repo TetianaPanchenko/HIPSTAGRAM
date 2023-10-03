@@ -31,3 +31,7 @@ h1 {
     font-size: 4.2em;
     line-height: 1.1;
 }
+
+.wrapper_loginForm {
+    height: 100%;
+}

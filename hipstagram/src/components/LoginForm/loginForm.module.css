@@ -1,0 +1,17 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+
+a {
+    text-decoration: none;
+    color: #4D88ED;
+}
