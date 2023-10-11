@@ -16,7 +16,6 @@ const LoginForm: FC = () => {
       <Button buttonText={'Sign In'} />
 
       <p>
-        {' '}
         If you not have account you can
         <a className={style.link} href="#">
           Registration
