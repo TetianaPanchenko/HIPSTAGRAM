@@ -1,12 +1,13 @@
 import './App.css';
-import LoginPage from "@/pages/LoginPage/LoginPage.tsx";
+
+import LoginPage from '@pages/LoginPage/LoginPage.tsx';
 
 function App() {
   return (
     <>
-     <LoginPage/>
+      <LoginPage />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

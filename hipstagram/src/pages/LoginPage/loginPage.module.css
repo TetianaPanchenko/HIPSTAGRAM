@@ -1,12 +1,12 @@
 .main {
     display: flex;
-    height: 100vh;
+    height: 100%;
     margin: 0;
     padding: 0;
 }
 
-.img {
-    height: 100vh;
+.bgImage {
+    height: 100%;
 }
 
 .wrapper {
@@ -23,11 +23,11 @@
     padding-top: 30px;
 }
 
-.logo {
+.logoImage {
     height: 90px;
 }
 
-h1 {
+.h1 {
     font-size: 4.2em;
     line-height: 1.1;
 }

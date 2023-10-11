@@ -8,30 +8,28 @@ module.exports = {
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
-  plugins: ['react-refresh', 'simple-import-sort'],
+  plugins: ['prettier', 'react', 'react-refresh', 'simple-import-sort'],
   rules: {
-    'react-refresh/only-export-components': [
-      'warn',
-      { allowConstantExport: true },
-      {
-        "sort-imports": ["error", {
-          "ignoreCase": true,
-          "ignoreDeclarationSort": false,
-          "ignoreMemberSort": false,
-          "memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
-          "allowSeparatedGroups": false,
-          "includeExports": true
-        }]
-      }
+    'prettier/prettier': 'error',
+    'react/jsx-props-no-multi-spaces': 'error',
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    'padding-line-between-statements': [
+      'error',
+      { blankLine: 'always', prev: '*', next: 'return' },
+      { blankLine: 'always', prev: 'return', next: '*' },
+      { blankLine: 'always', prev: '*', next: 'export' },
+      { blankLine: 'always', prev: 'export', next: '*' },
+      { blankLine: 'always', prev: '*', next: 'if' },
+      { blankLine: 'always', prev: 'if', next: '*' },
     ],
-    "simple-import-sort/imports": ["error", {
-      groups: [
-        ["^react"],
-        ["^antd"],
-        ["^@?\\w"],
-        ["@/(.*)"],
-        ["^[./]"]
-      ]
-    }],
-  }
+  },
+  overrides: [
+    {
+      files: ['*.js', '*.jsx', '*.tsx'],
+      rules: {
+        'prettier/prettier': ['error', { endOfLine: 'auto' }],
+      },
+    },
+  ],
 };
