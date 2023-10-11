@@ -5,16 +5,11 @@
     height: 100%;
 }
 
-h2 {
+.title {
     font-size: 30px;
-    font-weight: normal;
 }
 
-.linkForm {
-    margin-top: 40px;
-}
-
-a {
+.link {
     text-decoration: none;
     color: #4D88ED;
 }

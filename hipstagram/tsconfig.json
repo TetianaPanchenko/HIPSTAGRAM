@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@pages/*": ["app/pages/*"]
+    },
     "composite": true,
     "target": "ES2020",
     "useDefineForClassFields": true,
@@ -26,11 +30,6 @@
     "types": [
       "node"
     ],
-    "paths": {
-      "@*": [
-        "./src/*"
-      ]
-    },
     "include": [
       "src/**/*.ts"
     ],

@@ -16,7 +16,7 @@
     align-items: center;
 }
 
-.wrapper_logo {
+.wrapperLogo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,8 +30,4 @@
 .h1 {
     font-size: 4.2em;
     line-height: 1.1;
-}
-
-.wrapper_loginForm {
-    height: 100%;
 }

@@ -1,19 +1,13 @@
+import { FC, memo } from 'react';
+
 import style from './button.module.css';
 
-type Props = {
-    buttonText: string;
+interface IButtonProps {
+  buttonText: string;
 }
 
-const Button = (
-    { buttonText }: Props
-) => {
-    return(
-        <button
-            className={style.btn}
-        >
-            {buttonText}
-        </button>
-    )
-}
+const Button: FC<IButtonProps> = ({ buttonText }) => {
+  return <button className={style.button}>{buttonText}</button>;
+};
 
-export default Button;
+export default memo(Button);
