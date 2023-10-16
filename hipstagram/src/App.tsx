@@ -1,13 +1,14 @@
 import './App.css';
 
-import LoginPage from './pages/LoginPage/LoginPage.tsx';
+import LoginPage from '@pages/LoginPage/LoginPage.tsx';
+import { FC } from 'react';
 
-function App() {
+const App: FC = () => {
   return (
     <>
       <LoginPage />
     </>
   );
-}
+};
 
 export default App;

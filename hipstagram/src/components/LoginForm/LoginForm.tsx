@@ -1,7 +1,7 @@
 import { FC, memo } from 'react';
 
-import Button from '../Button/Button.tsx';
-import Input from '../Input/Input.tsx';
+import Input from '@components/Input/Input.tsx';
+import Button from '@components/Button/Button.tsx';
 import style from './loginForm.module.css';
 
 const LoginForm: FC = () => {
@@ -16,7 +16,6 @@ const LoginForm: FC = () => {
       <Button buttonText={'Sign In'} />
 
       <p>
-        {' '}
         If you not have account you can
         <a className={style.link} href="#">
           Registration

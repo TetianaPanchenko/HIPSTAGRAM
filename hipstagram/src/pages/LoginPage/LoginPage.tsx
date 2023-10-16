@@ -1,8 +1,8 @@
 import { FC, memo } from 'react';
 
-import logo from '../../assets/img/logo 1.png';
-import img from '../../assets/img/wpap_final 1.svg';
-import LoginForm from '../../components/LoginForm/LoginForm.tsx';
+import LoginForm from '@components/LoginForm/LoginForm.tsx';
+import logo from '@assets/img/logo 1.png';
+import img from '@assets/img/wpap_final 1.svg';
 import style from './loginPage.module.css';
 
 const LoginPage: FC = () => {
@@ -14,7 +14,7 @@ const LoginPage: FC = () => {
         <div className={style.wrapperLogo}>
           <img className={style.logoImage} src={logo} alt="logo" />
 
-          <h1 className={style.h1}>HIPSTAGRAM</h1>
+          <h1 className={style.title}>HIPSTAGRAM</h1>
         </div>
         <LoginForm />
       </div>
