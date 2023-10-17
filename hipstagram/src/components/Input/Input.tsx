@@ -9,7 +9,10 @@ interface IInputProps {
 
 const Input: FC<IInputProps> = ({ label, placeholder }) => {
   return (
-    <label htmlFor="inputField">
+    <label
+        className={style.wrapperInput}
+        htmlFor="inputField"
+    >
       {label}
       <input
         id="inputField"

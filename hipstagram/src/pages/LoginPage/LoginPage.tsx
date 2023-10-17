@@ -1,6 +1,6 @@
 import { FC, memo } from 'react';
 
-import LoginForm from '@components/LoginForm/LoginForm.tsx';
+import RegistrationForm from '@components/RegistrationForm/RegistrationForm';
 import logo from '@assets/img/logo 1.png';
 import img from '@assets/img/wpap_final 1.svg';
 import style from './loginPage.module.css';
@@ -16,7 +16,7 @@ const LoginPage: FC = () => {
 
           <h1 className={style.title}>Hipstagram</h1>
         </div>
-        <LoginForm />
+        <RegistrationForm />
       </div>
     </div>
   );

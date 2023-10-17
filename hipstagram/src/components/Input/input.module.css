@@ -1,9 +1,13 @@
-.input {
+.wrapperInput {
     display: flex;
     flex-direction: column;
+
+}
+
+.input {
     width: 350px;
     height: 45px;
     border: 1px solid #C0BFBF;
     border-radius: 10px;
-    margin: 5px 10px 10px;
+    margin: 10px 0 10px;
 }
