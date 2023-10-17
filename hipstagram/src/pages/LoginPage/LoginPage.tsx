@@ -14,7 +14,7 @@ const LoginPage: FC = () => {
         <div className={style.wrapperLogo}>
           <img className={style.logoImage} src={logo} alt="logo" />
 
-          <h1 className={style.title}>HIPSTAGRAM</h1>
+          <h1 className={style.title}>Hipstagram</h1>
         </div>
         <LoginForm />
       </div>

@@ -27,7 +27,6 @@
     height: 90px;
 }
 
-title {
-    font-size: 4.2em;
-    line-height: 1.1;
+.title {
+    text-transform: uppercase;
 }
