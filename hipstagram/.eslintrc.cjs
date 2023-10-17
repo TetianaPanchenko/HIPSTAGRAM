@@ -8,12 +8,10 @@ module.exports = {
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
-  plugins: ['prettier', 'react', 'react-refresh', 'simple-import-sort'],
+  plugins: ['prettier', 'react', 'react-refresh', 'simple-import-sort', 'import'],
   rules: {
     'prettier/prettier': 'error',
     'react/jsx-props-no-multi-spaces': 'error',
-    "simple-import-sort/imports": "error",
-    "simple-import-sort/exports": "error",
     'padding-line-between-statements': [
       'error',
       { blankLine: 'always', prev: '*', next: 'return' },

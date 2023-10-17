@@ -1,0 +1,15 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.link {
+    text-decoration: none;
+    color: #4D88ED;
+}
