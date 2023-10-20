@@ -1,8 +1,8 @@
-import './App.css';
+import { FC } from 'react';
 
 // import LoginPage from '@pages/LoginPage/LoginPage.tsx';
 import RegistrationPage from '@pages/RegistrationPage/RegistrationPage';
-import { FC } from 'react';
+import './App.css';
 
 const App: FC = () => {
   return (
