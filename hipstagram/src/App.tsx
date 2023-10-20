@@ -1,12 +1,14 @@
-import './App.css';
-
-import LoginPage from '@pages/LoginPage/LoginPage.tsx';
 import { FC } from 'react';
+
+// import LoginPage from '@pages/LoginPage/LoginPage.tsx';
+import RegistrationPage from '@pages/RegistrationPage/RegistrationPage';
+import './App.css';
 
 const App: FC = () => {
   return (
     <>
-      <LoginPage />
+      {/*<LoginPage />*/}
+        <RegistrationPage />
     </>
   );
 };
