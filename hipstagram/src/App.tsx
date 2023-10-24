@@ -1,14 +1,20 @@
 import { FC } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-// import LoginPage from '@pages/LoginPage/LoginPage.tsx';
+
 import RegistrationPage from '@pages/RegistrationPage/RegistrationPage';
+import LoginPage from '@pages/LoginPage/LoginPage';
 import './App.css';
 
 const App: FC = () => {
   return (
     <>
-      {/*<LoginPage />*/}
-        <RegistrationPage />
+        <BrowserRouter>
+            <Routes>
+                <Route path="*" element={<LoginPage />} />
+                <Route path="registration-page" element={<RegistrationPage />} />
+            </Routes>
+        </BrowserRouter>
     </>
   );
 };

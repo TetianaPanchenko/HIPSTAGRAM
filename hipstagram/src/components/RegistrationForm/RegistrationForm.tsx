@@ -19,7 +19,7 @@ const RegistrationForm: FC = () => {
 
             <p>
                 If you have account you can
-                <a className={style.link} href="#">
+                <a className={style.link} href="*">
                     Login
                 </a>
             </p>

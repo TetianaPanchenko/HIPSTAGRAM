@@ -17,7 +17,7 @@ const LoginForm: FC = () => {
 
       <p>
         If you not have account you can
-        <a className={style.link} href="#">
+        <a className={style.link} href="registration-page">
           Registration
         </a>
       </p>
