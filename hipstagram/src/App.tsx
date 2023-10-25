@@ -9,9 +9,6 @@ const App: FC = () => {
   return (
     <BrowserRouter>
       <Routes>
-        {/*<Route path="/" element={<LoginPage />} />*/}
-        {/*<Route path="/registration-page" element={<RegistrationPage />} />*/}
-        {/*<Navigate to="/login-page" replace={true} />;*/}
         <Route path="/login" element={<LoginPage />} />
         <Route path="/registration" element={<RegistrationPage />} />
         <Route path="/*" element={<Navigate to="/login" replace={true} />} />
