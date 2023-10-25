@@ -1,6 +1,5 @@
 import { FC } from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-
+import { BrowserRouter, Route, Navigate, Routes } from 'react-router-dom';
 
 import RegistrationPage from '@pages/RegistrationPage/RegistrationPage';
 import LoginPage from '@pages/LoginPage/LoginPage';
@@ -8,14 +7,16 @@ import './App.css';
 
 const App: FC = () => {
   return (
-    <>
-        <BrowserRouter>
-            <Routes>
-                <Route path="*" element={<LoginPage />} />
-                <Route path="registration-page" element={<RegistrationPage />} />
-            </Routes>
-        </BrowserRouter>
-    </>
+    <BrowserRouter>
+      <Routes>
+        {/*<Route path="/" element={<LoginPage />} />*/}
+        {/*<Route path="/registration-page" element={<RegistrationPage />} />*/}
+        {/*<Navigate to="/login-page" replace={true} />;*/}
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/registration" element={<RegistrationPage />} />
+        <Route path="/*" element={<Navigate to="/login" replace={true} />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 

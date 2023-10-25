@@ -5,9 +5,9 @@ import LoginForm from '@components/LoginForm/LoginForm';
 
 const LoginPage: FC = () => {
   return (
-          <LayoutAuthorization>
-              <LoginForm />
-          </LayoutAuthorization>
+    <LayoutAuthorization>
+      <LoginForm />
+    </LayoutAuthorization>
   );
 };
 
