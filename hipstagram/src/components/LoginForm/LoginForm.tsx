@@ -1,4 +1,5 @@
 import { FC, memo } from 'react';
+import { Link } from 'react-router-dom';
 
 import Input from '@components/Input/Input.tsx';
 import Button from '@components/Button/Button.tsx';
@@ -16,10 +17,10 @@ const LoginForm: FC = () => {
       <Button buttonText="Sign In" />
 
       <p>
-        If you not have account you can
-        <a className={style.link} href="#">
+        If you not have account you can{' '}
+        <Link className={style.link} to="/registration">
           Registration
-        </a>
+        </Link>
       </p>
     </div>
   );
